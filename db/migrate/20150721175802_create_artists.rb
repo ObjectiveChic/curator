@@ -5,7 +5,7 @@ class CreateArtists < ActiveRecord::Migration
       t.string :first_name
       t.string :album_type
       t.string :title
-      t.string :description, :limit => 300
+      t.text :description, :limit => 300
       t.decimal :price, precision: 5, scale: 2
       t.timestamps
     end
